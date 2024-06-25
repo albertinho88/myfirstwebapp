@@ -29,4 +29,11 @@ public class SayHelloController {
             </html>
             """;
     }
+
+    // src/main/resources/META-INF/resources/WEB-INF/jsp/sayHello.jsp
+    // src/main/resources/META-INF/resources/WEB-INF/jsp/welcome.jsp
+    @RequestMapping("say-hello-jsp")
+    public String sayHelloJsp() {
+        return "sayHello";
+    }
 }
