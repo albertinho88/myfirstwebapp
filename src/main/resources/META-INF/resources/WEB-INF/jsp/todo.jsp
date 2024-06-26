@@ -10,10 +10,11 @@
 <div class="container">
     <h1>Enter Todo Details</h1>
     <form:form method="POST" modelAttribute="todo" >
-        Description: <form:input type="text" path="description"  />
-        <input type="submit" class="btn btn-success">
+        Description: <form:input type="text" path="description"  /> <form:errors path="description" cssClass="text-warning" />
         <form:hidden path="id" />
         <form:hidden path="done" />
+        <br />
+        <input type="submit" class="btn btn-success">
     </form:form>
 </div>
 <script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
