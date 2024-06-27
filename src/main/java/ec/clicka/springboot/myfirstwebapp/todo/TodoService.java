@@ -42,6 +42,7 @@ public class TodoService {
     public void updateTodo(Todo todo) {
         Todo updatedTodo = findById(todo.getId());
         updatedTodo.setDescription(todo.getDescription());
+        updatedTodo.setTargetDate(todo.getTargetDate());
     }
 
 }
