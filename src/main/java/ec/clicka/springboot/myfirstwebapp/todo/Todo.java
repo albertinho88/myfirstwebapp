@@ -1,17 +1,23 @@
 package ec.clicka.springboot.myfirstwebapp.todo;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @ToString
+@Entity
 public class Todo {
 
+    @Id
     private int id;
 
     private String username;
