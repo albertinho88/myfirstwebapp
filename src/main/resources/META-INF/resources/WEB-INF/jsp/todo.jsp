@@ -18,6 +18,7 @@
 
         <form:hidden path="id"/>
         <form:hidden path="done"/>
+        <form:hidden path="username"/>
 
         <input type="submit" class="btn btn-success">
 
